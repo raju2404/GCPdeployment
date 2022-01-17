@@ -25,7 +25,7 @@ mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'Kallis@123'
 app.config['MYSQL_DATABASE_DB'] = 'db_test_scanify'
-app.config['MYSQL_DATABASE_HOST'] = '35.193.62.223'
+app.config['MYSQL_DATABASE_HOST'] = 'weighty-casing-337008:us-central1:scanify-app-instance-demo'
 
 
 
