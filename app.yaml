@@ -18,6 +18,12 @@ entrypoint: gunicorn -b :8080 main:app
 
 runtime_config:
   python_version: 3
+  
+  env_variables:
+  CLOUD_SQL_USERNAME: 'root'
+  CLOUD_SQL_PASSWORD: 'Kallis@123'
+  CLOUD_SQL_DATABASE_NAME: 'db_test_scanify'
+  CLOUD_SQL_CONNECTION_NAME: '35.193.62.223'
 
 # This sample incurs costs to run on the App Engine flexible environment. 
 # The settings below are to reduce costs during testing and are not appropriate
