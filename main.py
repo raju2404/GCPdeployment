@@ -22,15 +22,15 @@ app = Flask(__name__)
 mysql = MySQL()
 
 # MySQL configurations
-# app.config['MYSQL_DATABASE_USER'] = 'root'
-# app.config['MYSQL_DATABASE_PASSWORD'] = 'Kallis@123'
-# app.config['MYSQL_DATABASE_DB'] = 'db_test_scanify'
-# app.config['MYSQL_DATABASE_HOST'] = 'weighty-casing-337008:us-central1:scanify-app-instance-demo'
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'Kallis@123'
+app.config['MYSQL_DATABASE_DB'] = 'db_test_scanify'
+app.config['MYSQL_DATABASE_HOST'] = 'weighty-casing-337008:us-central1:scanify-app-instance-demo'
 
-app.config['MYSQL_DATABASE_USER'] = os.environ.get('CLOUD_SQL_USERNAME')
-app.config['MYSQL_DATABASE_PASSWORD'] = os.environ.get('CLOUD_SQL_PASSWORD')
-app.config['MYSQL_DATABASE_DB'] = os.environ.get('CLOUD_SQL_DATABASE_NAME')
-app.config['MYSQL_DATABASE_HOST'] = os.environ.get('CLOUD_SQL_CONNECTION_NAME')
+# app.config['MYSQL_DATABASE_USER'] = os.environ.get('CLOUD_SQL_USERNAME')
+# app.config['MYSQL_DATABASE_PASSWORD'] = os.environ.get('CLOUD_SQL_PASSWORD')
+# app.config['MYSQL_DATABASE_DB'] = os.environ.get('CLOUD_SQL_DATABASE_NAME')
+# app.config['MYSQL_DATABASE_HOST'] = os.environ.get('CLOUD_SQL_CONNECTION_NAME')
 
 
 mysql.init_app(app)
